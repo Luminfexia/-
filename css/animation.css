@@ -1,0 +1,74 @@
+.animation-text-one {
+    color: #333;
+}
+
+.scroll-text {
+    font-size: 0;
+    font-family: sans-serif;
+    white-space: nowrap;
+    display: block;
+    height: 7rem;
+}
+
+.scroll-text span.fl {
+    position: relative;
+    display: inline-block;
+    font-size: 8rem;
+}
+
+.y1,
+.y2,
+.y3,
+.y4,
+.y5,
+.y6 {
+    transition: color 0.5s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform, color, text-shadow;
+}
+
+/* Default Text Color (Black for White Background) */
+.y1,
+.y2,
+.y3,
+.y4,
+.y5,
+.y6 {
+    color: #333;
+    /* Slightly softer than pure black */
+}
+
+/* Glowing Shadows for White BG (Adjusted for Better Visibility) */
+.scrolling .y1 {
+    text-shadow: 3px 3px 10px rgba(255, 59, 59, 0.7);
+}
+
+.scrolling .y2 {
+    text-shadow: 3px 3px 10px rgba(0, 102, 204, 0.7);
+}
+
+.scrolling .y3 {
+    text-shadow: 3px 3px 10px rgba(0, 172, 120, 0.7);
+}
+
+.scrolling .y4 {
+    text-shadow: 3px 3px 10px rgba(255, 140, 0, 0.7);
+}
+
+.scrolling .y5 {
+    text-shadow: 3px 3px 10px rgba(142, 68, 173, 0.7);
+}
+
+.scrolling .y6 {
+    text-shadow: 3px 3px 10px rgba(39, 174, 96, 0.7);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .scroll-text span.fl {
+        font-size: 5rem;
+    }
+
+    .scroll-text {
+        height: 5rem;
+    }
+}
