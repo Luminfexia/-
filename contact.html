@@ -16,7 +16,7 @@
     <!-- courtney css -->
     <link rel="stylesheet" href="css/light-mode.css">
     <!-- page name -->
-    <title>Courtney</title>
+    <title>Luminfexia</title>
 
 </head>
 
@@ -152,15 +152,15 @@
 
                     <!-- contact -->
                     <div id="contact" class="mil-p-90-60">
-                        <form class="row align-items-center">
+                        <form id="contact-form" class="row align-items-center">
                             <div class="col-lg-6 mil-up">
-                                <input type="text" placeholder="What's your name">
+                                <input type="text" name="name" placeholder="What's your name" required>
                             </div>
                             <div class="col-lg-6 mil-up">
-                                <input type="email" placeholder="Your Email">
+                                <input type="email" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="col-lg-12 mil-up">
-                                <textarea placeholder="Tell us about our project"></textarea>
+                                <textarea name="message" placeholder="Tell us about our project" required></textarea>
                             </div>
                             <div class="col-lg-8">
                                 <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose
@@ -228,6 +228,30 @@
         <!-- content -->
     </div>
     <!-- wrapper end -->
+
+    <!-- Contact Us form -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("DAEdtyFgLP0sPPiuo"); // Public Key
+        })();
+    </script>
+
+     <script>
+        const form = document.querySelector("#contact-form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // prevent default form submit
+
+            emailjs.sendForm("service_9wfeja3", "template_on692lz", this)
+                .then(() => {
+                    alert("Message sent successfully!");
+                    form.reset();
+                }, (error) => {
+                    alert("Failed to send message: " + JSON.stringify(error));
+                });
+        });
+    </script>
 
     <!-- jQuery js -->
     <script src="js/jquery.min.js"></script>
