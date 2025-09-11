@@ -189,6 +189,10 @@
   background-image: linear-gradient(#7373d0, #5f5fe9) !important;
   border: 2px solid #7373d0 !important;
 }
+.button-b{
+  background-image: linear-gradient(#798dca, #475272) !important;
+  border: 2px solid #475272 !important;
+}
 .button:not(:hover) .hide,
 .button:not(:hover) .icon::before,
 .button:not(:hover) .icon::after {

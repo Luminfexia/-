@@ -214,6 +214,10 @@ a {
   color: #7373d0 !important;
 }
 
+.mil-blue-u {
+  color: #475272 !important;
+}
+
 .mil-light {
   color: rgb(255, 255, 255) !important;
 }
@@ -341,6 +345,11 @@ link
 .purple-c {
   background-color: #7373d0 !important;
 }
+/* University Wala */
+
+.blue-c {
+  background-color: #475272 !important;
+}
 
 .mil-link:hover svg {
   -webkit-filter: brightness(110%);
@@ -399,6 +408,68 @@ divider
   width: 7px;
   height: 7px;
   background-color: rgb(76, 175, 80);
+  border-radius: 50%;
+}
+
+/* Purple Smart E-Com */
+
+.mil-divider-purple {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(233, 233, 233);
+}
+
+.mil-divider-purple:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #7373d0;
+  border-radius: 50%;
+}
+
+.mil-divider-purple:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #7373d0;
+  border-radius: 50%;
+}
+
+/* blue University Wala */
+
+.mil-divider-blue {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(233, 233, 233);
+}
+
+.mil-divider-blue:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #475272;
+  border-radius: 50%;
+}
+
+.mil-divider-blue:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #475272;
   border-radius: 50%;
 }
 
@@ -1600,6 +1671,26 @@ content banner
   border-radius: 50%;
 }
 
+/* Blue University Wala */
+
+.mil-banner-sm .mil-banner-top-blue {
+  position: relative;
+  height: 90px;
+  width: 1px;
+  background-color: rgb(233, 233, 233);
+}
+
+.mil-banner-sm .mil-banner-top-blue:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  background-color: #475272;
+  border-radius: 50%;
+}
+
 .mil-banner-sm .mil-banner-title {
   padding: 60px 0 90px;
 }
@@ -2094,15 +2185,6 @@ puplication details
   margin-left: 15px;
 }
 
-.mil-puplication-details li:after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  background-color: #7373d0 !important;
-  border-radius: 50%;
-  margin-left: 15px;
-}
-
 .mil-puplication-details li:last-child {
   margin-left: 0;
 }
@@ -2195,15 +2277,6 @@ puplication details
   content: "";
   width: 7px;
   height: 7px;
-  background-color: rgb(76, 175, 80);
-  border-radius: 50%;
-  margin-left: 15px;
-}
-
-.mil-puplication-details-purple li:after {
-  content: "";
-  width: 7px;
-  height: 7px;
   background-color: #7373d0 !important;
   border-radius: 50%;
   margin-left: 15px;
@@ -2266,6 +2339,103 @@ puplication details
   }
 
   .mil-puplication-details-purple .mil-puplication-author img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* Blue University Wala */
+
+.mil-puplication-details-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mil-puplication-details-blue li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  margin-right: 17px;
+}
+
+.mil-puplication-details-blue li:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #475272 !important;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.mil-puplication-details-blue li:last-child {
+  margin-left: 0;
+}
+
+.mil-puplication-details-blue li:last-child:after {
+  display: none;
+}
+
+.mil-puplication-details-blue .mil-puplication-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mil-puplication-details-blue .mil-puplication-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .mil-puplication-details-blue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .mil-puplication-details-blue li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .mil-puplication-details-blue li:after {
+    display: none;
+  }
+
+  .mil-puplication-details-blue li:last-child {
+    margin-bottom: 0;
+  }
+
+  .mil-puplication-details-blue .mil-puplication-author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .mil-puplication-details-blue .mil-puplication-author img {
     margin-right: 0;
     margin-bottom: 15px;
   }
