@@ -251,6 +251,10 @@ a {
   text-align: right;
 }
 
+.mil-justify {
+  text-align: justify;
+}
+
 .mil-upper {
   text-transform: uppercase;
   font-size: 12px;
@@ -326,6 +330,12 @@ link
   color: rgb(255, 255, 255);
   -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+/* Smart Ecom */
+
+.purple-c {
+  background-color: #7373d0 !important;
 }
 
 .mil-link:hover svg {
