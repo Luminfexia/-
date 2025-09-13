@@ -219,6 +219,11 @@
   border: 2px solid #475272 !important;
 }
 
+.button-y {
+  background-image: linear-gradient(#f8b42b, #FFA800) !important;
+  border: 2px solid #FFA800 !important;
+}
+
 .button:not(:hover) .hide,
 .button:not(:hover) .icon::before,
 .button:not(:hover) .icon::after {
